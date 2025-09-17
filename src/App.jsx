@@ -1,9 +1,14 @@
 import './App.css'
+import Flashcard from './Flashcard'
 
 function App() {
 
   return (
-    <dvi></dvi>
+    <>
+    <Flashcard />
+    <Flashcard />
+    <Flashcard />
+    </>
   )
 }
 
