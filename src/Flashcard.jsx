@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./Flashcard.css";
 
-function Flashcard() {
+function Flashcard({question, answer}) {
     const [isflipped, setIsFlipped] = useState(false);
 
     function handleFlip() {
@@ -10,7 +10,7 @@ function Flashcard() {
 
     return (
         <div className="flashcard">  
-            {isflipped ?<p>4</p> : <p>ile to 2 + 2</p>}
+            {isflipped ?<p>{answer}</p> : <p>{question}</p>}
             <button onClick={handleFlip}>Zobacz odpowiedz</button>
         </div>
     )
