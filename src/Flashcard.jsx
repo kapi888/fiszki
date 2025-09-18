@@ -11,7 +11,8 @@ function Flashcard({question, answer}) {
     return (
         <div className="flashcard">  
             {isflipped ?<p>{answer}</p> : <p>{question}</p>}
-            <button onClick={handleFlip}>Zobacz odpowiedz</button>
+            <button id="przycisk" onClick={handleFlip}>Zobacz odpowiedz</button>
+            <p id="numer">Ilość:</p>
         </div>
     )
 }
